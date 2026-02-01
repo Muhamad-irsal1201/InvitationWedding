@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splinetool/viewer@1.0.62/build/spline-viewer.js"></script>
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body>
+<!-- Opening Screen -->
+<div id="opening" class="opening">
+    <div class="opening-card">
+        <h1>Muhamad & Syifa</h1>
+        <p>Kami mengundang kamu hadir dalam acara pernikahan kami</p>
+        <button id="openInvitation">Buka Undangan</button>
+    </div>
+</div>
+
+<!-- Background Music -->
+<audio id="bg-music" loop>
+    <source src="audio/Bitterlove.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Undangan Utama -->
+<div id="main-content" class="hidden">
+    <!-- isi undangan kamu di sini -->
+</div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="floating-hearts" id="hearts-container"></div>
+        <div class="floating-3d ring-3d"></div>
+        <div class="floating-3d heart-3d"></div>
+
+        <div class="hero-content">
+            <h1 class="couple-names fade-in">
+               Muhamad & Syifa
+                <span>akan melangsungkan pernikahan</span>
+            </h1>
+            <p class="wedding-date fade-in">15 Maret 2027</p>
+            <p class="wedding-date fade-in">Katedral St. Mary, Pukul 15.00 WIB</p>
+
+            <div class="scroll-indicator" id="scrollNext">
+                <i class="fas fa-chevron-down" style="margin-top: 60px; font-size: 1.5rem; color: var(--gold); animation: bounce 2s infinite;"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kisah Kami -->
+    <section id="kisah-kami" class="section" style="background: linear-gradient(135deg, var(--ivory) 0%, var(--beige) 100%);">
+        <div class="container">
+            <h2 class="section-title fade-in">Kisah Kami</h2>
+            <div class="cards-container">
+
+                <div class="polymorphic-card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="card-title">Pertemuan Pertama</h3>
+                    <p>
+                        Kami pertama kali bertemu pada sebuah acara sosial di tahun 2018. 
+                        Percakapan singkat yang sederhana saat itu menjadi awal dari perjalanan panjang penuh cinta dan kebahagiaan.
+                    </p>
+                </div>
+
+                <div class="polymorphic-card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3 class="card-title">Lamaran</h3>
+                    <p>
+                        Dalam suasana romantis saat matahari terbenam, sebuah pertanyaan sederhana namun penuh makna pun terucap.
+                        Momen tersebut menjadi kenangan yang tak terlupakan bagi kami berdua.
+                    </p>
+                </div>
+
+                <div class="polymorphic-card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3 class="card-title">Masa Depan Bersama</h3>
+                    <p>
+                        Kami siap melangkah bersama, membangun kehidupan yang dipenuhi cinta, tawa, dan kebersamaan.
+                        Kehadiran Anda akan menjadi bagian terindah dari awal perjalanan kami.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Detail Acara -->
+    <section class="section" style="background: linear-gradient(135deg, var(--beige) 0%, var(--champagne) 100%);">
+        <div class="container">
+            <h2 class="section-title fade-in">Detail Acara</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <span class="timeline-time">14.00 WIB</span>
+                        <h3>Kedatangan Tamu</h3>
+                        <p>
+                            Tamu undangan dipersilakan hadir dan menikmati hidangan pembuka yang telah disediakan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <span class="timeline-time">15.00 WIB</span>
+                        <h3>Akad / Pemberkatan</h3>
+                        <p>
+                            Prosesi pernikahan akan dimulai tepat waktu. Mohon tamu telah menempati tempat duduk sebelum acara dimulai.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <span class="timeline-time">16.30 WIB</span>
+                        <h3>Ramahan & Foto Bersama</h3>
+                        <p>
+                            Acara dilanjutkan dengan ramah tamah dan sesi foto bersama keluarga serta tamu undangan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <span class="timeline-time">18.00 WIB</span>
+                        <h3>Resepsi & Makan Malam</h3>
+                        <p>
+                            Jamuan makan malam dan rangkaian acara resepsi di Ballroom Hotel Metropolitan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <span class="timeline-time">21.00 WIB</span>
+                        <h3>Hiburan & Penutup</h3>
+                        <p>
+                            Acara hiburan dan penutup hingga selesai.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section class="section" style="background: linear-gradient(135deg, var(--champagne) 0%, var(--ivory) 100%);">
+        <div class="container">
+            <h2 class="section-title fade-in">Galeri Kenangan</h2>
+            <div class="gallery">
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Foto Pertunangan" class="gallery-image">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=800&q=80" alt="Momen Lamaran" class="gallery-image">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=800&q=80" alt="Potret Pasangan" class="gallery-image">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?auto=format&fit=crop&w=800&q=80" alt="Lokasi Acara" class="gallery-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="section" style="background: linear-gradient(135deg, var(--ivory) 0%, var(--beige) 100%);">
+        <div class="container">
+            <h2 class="section-title fade-in">Konfirmasi Kehadiran</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; font-size: 1.1rem;" class="fade-in">
+                Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.  
+                Mohon konfirmasi kehadiran sebelum 15 Agustus 2024.
+            </p>
+
+            <div class="rsvp-form fade-in">
+                <form id="wedding-rsvp">
+
+                    <div class="form-group">
+                        <label class="form-label">Nama Lengkap</label>
+                        <input type="text" name="nama" class="form-input"  placeholder="Masukkan nama lengkap" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Alamat Email</label>
+                        <input type="email" name="email" class="form-input" placeholder="Masukkan email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Jumlah Tamu</label>
+                        <select name="jumlah_tamu" class="form-select" required>
+                            <option value="" disabled selected>Pilih jumlah tamu</option>
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="3">3 Orang</option>
+                            <option value="4">4 Orang</option>
+                            <option value="5">Lebih dari 4 Orang</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Apakah Anda akan hadir?</label>
+                        <div style="display: flex; gap: 20px;">
+                            <label>
+                                <input type="radio" name="kehadiran" value="Hadir" required>
+                                Ya, dengan senang hati
+                            </label>
+                            <label>
+                                <input type="radio" name="kehadiran" value="Tidak Hadir" required>
+                                Mohon maaf, tidak dapat hadir
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Catatan Khusus</label>
+                        <textarea name="catatan" class="form-input" rows="3" placeholder="Alergi makanan atau catatan khusus (opsional)"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Kirim Konfirmasi</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h2 class="section-title" style="color: var(--champagne);">Dengan Cinta</h2>
+            <p class="footer-text">
+                Muhamad & Syifa<br>
+                15 Maret 2027
+            </p>
+            <p class="footer-text">
+                “Dan di antara tanda-tanda kebesaran-Nya, Dia menciptakan pasangan hidup agar kamu merasa tenteram.”
+            </p>
+            <p class="footer-text" style="margin-top: 40px;">
+                Dibuat dengan <span class="footer-heart"><i class="fas fa-heart"></i></span> untuk hari istimewa kami
+            </p>
+        </div>
+    </footer>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("YOUR_PUBLIC_KEY"); // ganti dengan public key dari EmailJS
+   })();
+</script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
